@@ -5,7 +5,7 @@ import {CreateProductComponent} from './create-product/create-product.component'
 import {UpdateProductComponent} from './update-product/update-product.component';
 
 const routes: Routes = [
-  {path: 'home', component:ProductsComponent},
+  {path: '', component:ProductsComponent},
   {path: 'create-product', component:CreateProductComponent},
   {path: 'update-product', component:UpdateProductComponent},
 ];
