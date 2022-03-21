@@ -1,0 +1,10 @@
+<div class="title-container">Productos</div>
+<div class="container">
+  <app-product
+    *ngFor="let product of products"
+    title="{{ product.title }}"
+    price="{{ product.price }}"
+    image="{{ product.image }}"
+    description="{{ product.description }}"
+  ></app-product>
+</div>
