@@ -1,1 +1,53 @@
-<p>create-product works!</p>
+<div class="container-form">
+  <form class="form" [formGroup]="productForm" (ngSubmit)="submit()">
+    <div class="container-input">
+      <label for="title">Nombre Producto</label>
+      <input
+        id="title"
+        type="text"
+        formControlName="title"
+        placeholder="nombre product..."
+      />
+    </div>
+    <div class="container-input">
+      <label for="description"> descripcion</label>
+      <input
+        id="description"
+        type="text"
+        formControlName="description"
+        placeholder=" descripcion"
+      />
+    </div>
+    <div class="container-input">
+      <label for="image"> Url imagen producto</label>
+      <input
+        id="image"
+        type="text"
+        formControlName="image"
+        placeholder="url imagen del prod..."
+      />
+    </div>
+    <div class="container-input">
+      <label for="price">Precio</label>
+      <input
+        id="price"
+        type="text"
+        formControlName="price"
+        placeholder="precio prod..."
+      />
+    </div>
+    <div class="container-input">
+      <label for="stock">Stock</label>
+      <input
+        id="stock"
+        type="text"
+        formControlName="stock"
+        placeholder="stock prod"
+      />
+    </div>
+    <input type="submit" value="enviar" />
+  </form>
+  <div class="creado" *ngIf="datos">
+    se ha creado el producto {{ datos.title }}
+  </div>
+</div>

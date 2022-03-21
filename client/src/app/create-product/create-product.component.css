@@ -1,0 +1,25 @@
+.container-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container-input {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+.form {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  margin-top: 10vh;
+}
+.creado {
+  background: rgb(15, 202, 15);
+  color: white;
+  padding: 15px;
+  margin-top: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0.2);
+}
